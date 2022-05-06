@@ -53,4 +53,4 @@ class Snake:
             self.head.setheading(RIGHT)
 
     def reset_snake(self):
-
+        self.ggturtles.clear()
