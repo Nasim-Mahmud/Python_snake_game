@@ -54,4 +54,4 @@ class Snake:
 
     def reset_snake(self):
         self.ggturtles.clear()
-        self.ggturtles.goto(0, 0)
+        self.create_snake()
