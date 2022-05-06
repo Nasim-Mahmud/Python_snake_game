@@ -35,6 +35,7 @@ while game_is_on:
 #     Detect collision with wall
     if snake.head.xcor() > 280 or snake.head.xcor() < -280 or snake.head.ycor() > 280 or snake.head.ycor() < -280:
         scoreboard.reset()
+        snake.reset_snake()
         # game_is_on = False
         # scoreboard.game_over()
 
@@ -43,6 +44,7 @@ while game_is_on:
     for tur in snake.ggturtles[1:]:
         if snake.head.distance(tur) < 5:
             scoreboard.reset()
+            snake.reset_snake()
             # game_is_on = False
             # scoreboard.game_over()
 screen.exitonclick()
