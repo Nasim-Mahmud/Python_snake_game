@@ -53,5 +53,8 @@ class Snake:
             self.head.setheading(RIGHT)
 
     def reset_snake(self):
+        for tur in self.ggturtles:
+            tur.goto(1000, 1000)
         self.ggturtles.clear()
         self.create_snake()
+        self.head = self.ggturtles[0]
