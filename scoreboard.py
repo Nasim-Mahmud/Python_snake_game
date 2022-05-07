@@ -33,7 +33,3 @@ class Scoreboard(Turtle):
         self.score += 1
         self.update_scoreboard()
 
-    def high_score(self):
-        with open("data.txt") as hs:
-            self.high_score = hs.read()
-            return  self.high_score
